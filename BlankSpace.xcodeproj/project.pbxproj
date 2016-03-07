@@ -15,6 +15,8 @@
 		8E8197071C8D51C800B82F8E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E8197051C8D51C800B82F8E /* LaunchScreen.storyboard */; };
 		8E8197121C8D51C800B82F8E /* BlankSpaceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E8197111C8D51C800B82F8E /* BlankSpaceTests.m */; };
 		8E81971D1C8D51C800B82F8E /* BlankSpaceUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E81971C1C8D51C800B82F8E /* BlankSpaceUITests.m */; };
+		8E81972F1C8D5D3300B82F8E /* BSJSONWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E81972E1C8D5D3300B82F8E /* BSJSONWrapper.m */; };
+		98C37C8E4B33C263C04D86ED /* libPods-BlankSpace.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CB87C482DAA229F5EFF3487 /* libPods-BlankSpace.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1CB87C482DAA229F5EFF3487 /* libPods-BlankSpace.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BlankSpace.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A309A61997B245BAF43727D /* Pods-BlankSpace.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlankSpace.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BlankSpace/Pods-BlankSpace.debug.xcconfig"; sourceTree = "<group>"; };
 		8E8196F41C8D51C800B82F8E /* BlankSpace.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlankSpace.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E8196F81C8D51C800B82F8E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		8E8196FA1C8D51C800B82F8E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -51,6 +55,9 @@
 		8E8197181C8D51C800B82F8E /* BlankSpaceUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BlankSpaceUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E81971C1C8D51C800B82F8E /* BlankSpaceUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BlankSpaceUITests.m; sourceTree = "<group>"; };
 		8E81971E1C8D51C800B82F8E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8E81972D1C8D5D3300B82F8E /* BSJSONWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BSJSONWrapper.h; path = Utils/BSJSONWrapper.h; sourceTree = "<group>"; };
+		8E81972E1C8D5D3300B82F8E /* BSJSONWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BSJSONWrapper.m; path = Utils/BSJSONWrapper.m; sourceTree = "<group>"; };
+		F31DE8D4356176508039712B /* Pods-BlankSpace.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlankSpace.release.xcconfig"; path = "Pods/Target Support Files/Pods-BlankSpace/Pods-BlankSpace.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				98C37C8E4B33C263C04D86ED /* libPods-BlankSpace.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +93,8 @@
 				8E8197101C8D51C800B82F8E /* BlankSpaceTests */,
 				8E81971B1C8D51C800B82F8E /* BlankSpaceUITests */,
 				8E8196F51C8D51C800B82F8E /* Products */,
+				CC017B52CE3249D17D05C2EB /* Pods */,
+				AB5363867A755E411FEA0C17 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,6 +111,9 @@
 		8E8196F61C8D51C800B82F8E /* BlankSpace */ = {
 			isa = PBXGroup;
 			children = (
+				8E81972C1C8D5C8A00B82F8E /* Utils */,
+				8E81972B1C8D545600B82F8E /* Network */,
+				8E81972A1C8D543000B82F8E /* Base */,
 				8E8196FA1C8D51C800B82F8E /* AppDelegate.h */,
 				8E8196FB1C8D51C800B82F8E /* AppDelegate.m */,
 				8E8196FD1C8D51C800B82F8E /* ViewController.h */,
@@ -140,6 +153,46 @@
 			path = BlankSpaceUITests;
 			sourceTree = "<group>";
 		};
+		8E81972A1C8D543000B82F8E /* Base */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Base;
+			sourceTree = "<group>";
+		};
+		8E81972B1C8D545600B82F8E /* Network */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Network;
+			sourceTree = "<group>";
+		};
+		8E81972C1C8D5C8A00B82F8E /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				8E81972D1C8D5D3300B82F8E /* BSJSONWrapper.h */,
+				8E81972E1C8D5D3300B82F8E /* BSJSONWrapper.m */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
+		AB5363867A755E411FEA0C17 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1CB87C482DAA229F5EFF3487 /* libPods-BlankSpace.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CC017B52CE3249D17D05C2EB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8A309A61997B245BAF43727D /* Pods-BlankSpace.debug.xcconfig */,
+				F31DE8D4356176508039712B /* Pods-BlankSpace.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -147,9 +200,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8E8197211C8D51C800B82F8E /* Build configuration list for PBXNativeTarget "BlankSpace" */;
 			buildPhases = (
+				DC350E1A92140D1AF7C23E31 /* Check Pods Manifest.lock */,
 				8E8196F01C8D51C800B82F8E /* Sources */,
 				8E8196F11C8D51C800B82F8E /* Frameworks */,
 				8E8196F21C8D51C800B82F8E /* Resources */,
+				2B5DF33D6E17A451DE83377F /* Embed Pods Frameworks */,
+				C701F8B16CCAA539DF1DC3C2 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -265,6 +321,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2B5DF33D6E17A451DE83377F /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BlankSpace/Pods-BlankSpace-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C701F8B16CCAA539DF1DC3C2 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BlankSpace/Pods-BlankSpace-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DC350E1A92140D1AF7C23E31 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		8E8196F01C8D51C800B82F8E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -272,6 +376,7 @@
 			files = (
 				8E8196FF1C8D51C800B82F8E /* ViewController.m in Sources */,
 				8E8196FC1C8D51C800B82F8E /* AppDelegate.m in Sources */,
+				8E81972F1C8D5D3300B82F8E /* BSJSONWrapper.m in Sources */,
 				8E8196F91C8D51C800B82F8E /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -409,6 +514,7 @@
 		};
 		8E8197221C8D51C800B82F8E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8A309A61997B245BAF43727D /* Pods-BlankSpace.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = BlankSpace/Info.plist;
@@ -420,6 +526,7 @@
 		};
 		8E8197231C8D51C800B82F8E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F31DE8D4356176508039712B /* Pods-BlankSpace.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = BlankSpace/Info.plist;
@@ -496,6 +603,7 @@
 				8E8197231C8D51C800B82F8E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8E8197241C8D51C800B82F8E /* Build configuration list for PBXNativeTarget "BlankSpaceTests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +612,7 @@
 				8E8197261C8D51C800B82F8E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8E8197271C8D51C800B82F8E /* Build configuration list for PBXNativeTarget "BlankSpaceUITests" */ = {
 			isa = XCConfigurationList;
@@ -512,6 +621,7 @@
 				8E8197291C8D51C800B82F8E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
