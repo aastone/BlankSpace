@@ -7,6 +7,8 @@
 //
 
 #import "BSHTTPAPIManager.h"
+#import "BSLib.h"
+#import "BSAPIResult.h"
 
 @implementation BSHTTPAPIManager
 
@@ -14,6 +16,11 @@
 {
     self = [super init];
     if (self) {
+        [self.reachabilityManager setReachabilityStatusChangeBlock:^(AFNetworkReachabilityStatus status) {
+            if (status == AFNetworkReachabilityStatusNotReachable) {
+                [[[AFHTTPSessionManager manager] operationQueue] cancelAllOperations];
+            }
+        }];
     }
     return self;
 }
@@ -24,7 +31,7 @@
         params = [NSDictionary dictionary];
     }
     
-    
+    //TODO 对path进行处理
     
     void (^progressBlock)(NSProgress *) = ^(NSProgress *downloadProgress) {
         //TODO
@@ -52,6 +59,15 @@
     }
     
     return manager;
+}
+
+- (void)_parseResultWithDictionary:(NSDictionary *)dictionary
+                           manager:(NSURLSessionDataTask *)manager
+                           success:(BSHTTPSuccessBlock)success
+                           failure:(BSHTTPFailureBlock)failure
+{
+    BSAPIResult *result = [[BSAPIResult alloc] initWithDictionary:dictionary];
+    
 }
 
 @end

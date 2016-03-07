@@ -10,4 +10,11 @@
 
 @implementation BSAPIResult
 
+- (id)initWithDictionary:(NSDictionary *)dictionary
+{
+    self = [super init];
+    
+    return self;
+}
+
 @end

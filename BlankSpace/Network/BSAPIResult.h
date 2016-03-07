@@ -10,4 +10,6 @@
 
 @interface BSAPIResult : NSObject
 
+- (id)initWithDictionary:(NSDictionary *)dictionary;
+
 @end
