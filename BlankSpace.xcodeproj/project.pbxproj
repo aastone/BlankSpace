@@ -16,6 +16,8 @@
 		8E8197121C8D51C800B82F8E /* BlankSpaceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E8197111C8D51C800B82F8E /* BlankSpaceTests.m */; };
 		8E81971D1C8D51C800B82F8E /* BlankSpaceUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E81971C1C8D51C800B82F8E /* BlankSpaceUITests.m */; };
 		8E81972F1C8D5D3300B82F8E /* BSJSONWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E81972E1C8D5D3300B82F8E /* BSJSONWrapper.m */; };
+		8EFDDF9E1C8D6CC1000A9B07 /* BSAPIResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EFDDF9D1C8D6CC1000A9B07 /* BSAPIResult.m */; };
+		8EFDDFA11C8D6E52000A9B07 /* BSHTTPAPIManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EFDDFA01C8D6E52000A9B07 /* BSHTTPAPIManager.m */; };
 		98C37C8E4B33C263C04D86ED /* libPods-BlankSpace.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CB87C482DAA229F5EFF3487 /* libPods-BlankSpace.a */; };
 /* End PBXBuildFile section */
 
@@ -57,6 +59,10 @@
 		8E81971E1C8D51C800B82F8E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8E81972D1C8D5D3300B82F8E /* BSJSONWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BSJSONWrapper.h; path = Utils/BSJSONWrapper.h; sourceTree = "<group>"; };
 		8E81972E1C8D5D3300B82F8E /* BSJSONWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BSJSONWrapper.m; path = Utils/BSJSONWrapper.m; sourceTree = "<group>"; };
+		8EFDDF9C1C8D6CC1000A9B07 /* BSAPIResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BSAPIResult.h; path = Network/BSAPIResult.h; sourceTree = "<group>"; };
+		8EFDDF9D1C8D6CC1000A9B07 /* BSAPIResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BSAPIResult.m; path = Network/BSAPIResult.m; sourceTree = "<group>"; };
+		8EFDDF9F1C8D6E52000A9B07 /* BSHTTPAPIManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BSHTTPAPIManager.h; path = Network/BSHTTPAPIManager.h; sourceTree = "<group>"; };
+		8EFDDFA01C8D6E52000A9B07 /* BSHTTPAPIManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BSHTTPAPIManager.m; path = Network/BSHTTPAPIManager.m; sourceTree = "<group>"; };
 		F31DE8D4356176508039712B /* Pods-BlankSpace.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlankSpace.release.xcconfig"; path = "Pods/Target Support Files/Pods-BlankSpace/Pods-BlankSpace.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -163,6 +169,10 @@
 		8E81972B1C8D545600B82F8E /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				8EFDDF9C1C8D6CC1000A9B07 /* BSAPIResult.h */,
+				8EFDDF9D1C8D6CC1000A9B07 /* BSAPIResult.m */,
+				8EFDDF9F1C8D6E52000A9B07 /* BSHTTPAPIManager.h */,
+				8EFDDFA01C8D6E52000A9B07 /* BSHTTPAPIManager.m */,
 			);
 			name = Network;
 			sourceTree = "<group>";
@@ -378,6 +388,8 @@
 				8E8196FC1C8D51C800B82F8E /* AppDelegate.m in Sources */,
 				8E81972F1C8D5D3300B82F8E /* BSJSONWrapper.m in Sources */,
 				8E8196F91C8D51C800B82F8E /* main.m in Sources */,
+				8EFDDF9E1C8D6CC1000A9B07 /* BSAPIResult.m in Sources */,
+				8EFDDFA11C8D6E52000A9B07 /* BSHTTPAPIManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
