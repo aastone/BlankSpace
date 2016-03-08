@@ -25,6 +25,7 @@
     self.path = path;
     self.method = method;
     
+    // 在初始化的时候可以在params里面加一些默认的参数，如size, offset等
     self.params = [NSMutableDictionary dictionary];
     if (params) {
         [self.params addEntriesFromDictionary:params];
@@ -47,13 +48,30 @@
 - (void)sendRequestWithManager:(BSHTTPAPIManager *)manager success:(BSHTTPSuccessBlock)success failure:(BSHTTPFailureBlock)failure
 {
     self.manager = [manager sendRequestWithPath:self.path method:self.method params:self.params progress:nil success:^(BSAPIResult *result) {
-//        <#code#>
+        [self handleSuccessWithResult:result successBlock:success];
     } failure:^(NSError *error) {
-//        <#code#>
+        [self handleErrorWithError:error failureBlock:failure];
     }];
 }
 
+- (void)handleErrorWithError:(NSError *)error failureBlock:(BSHTTPFailureBlock)failureBlock
+{
+    if (failureBlock) {
+        failureBlock(error);
+    }
+}
 
+- (void)handleSuccessWithResult:(BSAPIResult *)result successBlock:(BSHTTPSuccessBlock)successBlock
+{
+    if (successBlock) {
+        successBlock(result);
+    }
+}
+
+- (void)willSendRequestWithAPIManager:(BSHTTPAPIManager *)manager
+{
+    
+}
 
 
 
