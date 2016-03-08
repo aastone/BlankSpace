@@ -37,12 +37,12 @@
         //TODO
     };
     
-    void (^successBlock)(NSURLSessionDataTask *, id) = ^(NSURLSessionDataTask *manager, id JSON) {
+    void (^successBlock)(NSURLSessionTask *, id) = ^(NSURLSessionTask *manager, id JSON) {
         //TODO
         [self _parseResultWithDictionary:JSON manager:manager success:success failure:failure];
     };
     
-    void (^failBlock)(NSURLSessionDataTask *, NSError *) = ^(NSURLSessionDataTask *manager, NSError *error) {
+    void (^failBlock)(NSURLSessionTask *, NSError *) = ^(NSURLSessionTask *manager, NSError *error) {
         //TODO
     };
     
@@ -83,7 +83,7 @@
 
 // 处理接口返回的信息 封装为BSAPIResult类
 - (void)_parseResultWithDictionary:(NSDictionary *)dictionary
-                           manager:(NSURLSessionDataTask *)manager
+                           manager:(NSURLSessionTask *)manager
                            success:(BSHTTPSuccessBlock)success
                            failure:(BSHTTPFailureBlock)failure
 {
@@ -97,6 +97,22 @@
         failure(error);
         //TODO:输出错误信息
     }
+}
+
+- (void)responseInfoDescription:(NSURLSessionDataTask *)data
+{
+    NSHTTPURLResponse *response = (NSHTTPURLResponse *)data.response;
+    //TODO 差一个response string
+    NSLog(@"%@", [NSString stringWithFormat:@" -----RequestURL-----:\n %@ %@,\n"
+                  " -----RequestBody-----: \n%@, \n"
+                  " -----RequestHeader-----: \n%@, \n"
+                  " -----ResponseStatus-----: \n%@, \n"
+                  " -----ResponseHeader-----: \n%@, \n",
+                      data.currentRequest.URL, data.currentRequest.HTTPMethod,
+                  [[NSString alloc] initWithData:[data.currentRequest HTTPBody] encoding:(NSUTF8StringEncoding)],
+                  data.currentRequest.allHTTPHeaderFields,
+                  @(response.statusCode),
+                  response.allHeaderFields]);
 }
 
 static BSHTTPAPIManager *sharedInstance = nil;

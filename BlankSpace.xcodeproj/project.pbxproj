@@ -20,6 +20,7 @@
 		8EFDDF9E1C8D6CC1000A9B07 /* BSAPIResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EFDDF9D1C8D6CC1000A9B07 /* BSAPIResult.m */; };
 		8EFDDFAE1C8E7442000A9B07 /* RKObjectUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EFDDFAB1C8E7442000A9B07 /* RKObjectUtilities.m */; };
 		8EFDDFAF1C8E7442000A9B07 /* RKPropertyInspector.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EFDDFAD1C8E7442000A9B07 /* RKPropertyInspector.m */; };
+		8EFDDFB21C8EAAC5000A9B07 /* BSAPIRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EFDDFB11C8EAAC5000A9B07 /* BSAPIRequest.m */; };
 		98C37C8E4B33C263C04D86ED /* libPods-BlankSpace.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CB87C482DAA229F5EFF3487 /* libPods-BlankSpace.a */; };
 /* End PBXBuildFile section */
 
@@ -70,6 +71,8 @@
 		8EFDDFAB1C8E7442000A9B07 /* RKObjectUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RKObjectUtilities.m; sourceTree = "<group>"; };
 		8EFDDFAC1C8E7442000A9B07 /* RKPropertyInspector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RKPropertyInspector.h; sourceTree = "<group>"; };
 		8EFDDFAD1C8E7442000A9B07 /* RKPropertyInspector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RKPropertyInspector.m; sourceTree = "<group>"; };
+		8EFDDFB01C8EAAC5000A9B07 /* BSAPIRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BSAPIRequest.h; path = Network/BSAPIRequest.h; sourceTree = "<group>"; };
+		8EFDDFB11C8EAAC5000A9B07 /* BSAPIRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BSAPIRequest.m; path = Network/BSAPIRequest.m; sourceTree = "<group>"; };
 		F31DE8D4356176508039712B /* Pods-BlankSpace.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlankSpace.release.xcconfig"; path = "Pods/Target Support Files/Pods-BlankSpace/Pods-BlankSpace.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -181,6 +184,8 @@
 				8EFDDF9D1C8D6CC1000A9B07 /* BSAPIResult.m */,
 				8EFDDF9F1C8D6E52000A9B07 /* BSHTTPAPIManager.h */,
 				8EFDDFA01C8D6E52000A9B07 /* BSHTTPAPIManager.m */,
+				8EFDDFB01C8EAAC5000A9B07 /* BSAPIRequest.h */,
+				8EFDDFB11C8EAAC5000A9B07 /* BSAPIRequest.m */,
 			);
 			name = Network;
 			sourceTree = "<group>";
@@ -428,6 +433,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8EFDDFB21C8EAAC5000A9B07 /* BSAPIRequest.m in Sources */,
 				8E6D75E71C8DD3FB0012658D /* BSHTTPAPIManager.m in Sources */,
 				8EFDDFAF1C8E7442000A9B07 /* RKPropertyInspector.m in Sources */,
 				8E8196FF1C8D51C800B82F8E /* ViewController.m in Sources */,
