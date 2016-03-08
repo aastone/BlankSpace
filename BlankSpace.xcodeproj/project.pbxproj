@@ -18,6 +18,8 @@
 		8E81971D1C8D51C800B82F8E /* BlankSpaceUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E81971C1C8D51C800B82F8E /* BlankSpaceUITests.m */; };
 		8E81972F1C8D5D3300B82F8E /* BSJSONWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E81972E1C8D5D3300B82F8E /* BSJSONWrapper.m */; };
 		8EFDDF9E1C8D6CC1000A9B07 /* BSAPIResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EFDDF9D1C8D6CC1000A9B07 /* BSAPIResult.m */; };
+		8EFDDFAE1C8E7442000A9B07 /* RKObjectUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EFDDFAB1C8E7442000A9B07 /* RKObjectUtilities.m */; };
+		8EFDDFAF1C8E7442000A9B07 /* RKPropertyInspector.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EFDDFAD1C8E7442000A9B07 /* RKPropertyInspector.m */; };
 		98C37C8E4B33C263C04D86ED /* libPods-BlankSpace.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CB87C482DAA229F5EFF3487 /* libPods-BlankSpace.a */; };
 /* End PBXBuildFile section */
 
@@ -64,6 +66,10 @@
 		8EFDDF9D1C8D6CC1000A9B07 /* BSAPIResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BSAPIResult.m; path = Network/BSAPIResult.m; sourceTree = "<group>"; };
 		8EFDDF9F1C8D6E52000A9B07 /* BSHTTPAPIManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BSHTTPAPIManager.h; path = Network/BSHTTPAPIManager.h; sourceTree = "<group>"; };
 		8EFDDFA01C8D6E52000A9B07 /* BSHTTPAPIManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BSHTTPAPIManager.m; path = Network/BSHTTPAPIManager.m; sourceTree = "<group>"; };
+		8EFDDFAA1C8E7442000A9B07 /* RKObjectUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RKObjectUtilities.h; sourceTree = "<group>"; };
+		8EFDDFAB1C8E7442000A9B07 /* RKObjectUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RKObjectUtilities.m; sourceTree = "<group>"; };
+		8EFDDFAC1C8E7442000A9B07 /* RKPropertyInspector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RKPropertyInspector.h; sourceTree = "<group>"; };
+		8EFDDFAD1C8E7442000A9B07 /* RKPropertyInspector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RKPropertyInspector.m; sourceTree = "<group>"; };
 		F31DE8D4356176508039712B /* Pods-BlankSpace.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlankSpace.release.xcconfig"; path = "Pods/Target Support Files/Pods-BlankSpace/Pods-BlankSpace.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -118,6 +124,7 @@
 		8E8196F61C8D51C800B82F8E /* BlankSpace */ = {
 			isa = PBXGroup;
 			children = (
+				8EFDDFA61C8E6FF4000A9B07 /* Model */,
 				8E81972C1C8D5C8A00B82F8E /* Utils */,
 				8E81972B1C8D545600B82F8E /* Network */,
 				8E81972A1C8D543000B82F8E /* Base */,
@@ -181,11 +188,46 @@
 		8E81972C1C8D5C8A00B82F8E /* Utils */ = {
 			isa = PBXGroup;
 			children = (
-				8E81972D1C8D5D3300B82F8E /* BSJSONWrapper.h */,
-				8E81972E1C8D5D3300B82F8E /* BSJSONWrapper.m */,
-				8E6D75E61C8DD3470012658D /* BSLib.h */,
+				8EFDDFA91C8E7442000A9B07 /* RuntimeUtil */,
+				8EFDDFA81C8E7409000A9B07 /* Lib */,
+				8EFDDFA71C8E73F9000A9B07 /* Categories */,
 			);
 			name = Utils;
+			sourceTree = "<group>";
+		};
+		8EFDDFA61C8E6FF4000A9B07 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		8EFDDFA71C8E73F9000A9B07 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				8E81972D1C8D5D3300B82F8E /* BSJSONWrapper.h */,
+				8E81972E1C8D5D3300B82F8E /* BSJSONWrapper.m */,
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
+		8EFDDFA81C8E7409000A9B07 /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+				8E6D75E61C8DD3470012658D /* BSLib.h */,
+			);
+			name = Lib;
+			sourceTree = "<group>";
+		};
+		8EFDDFA91C8E7442000A9B07 /* RuntimeUtil */ = {
+			isa = PBXGroup;
+			children = (
+				8EFDDFAA1C8E7442000A9B07 /* RKObjectUtilities.h */,
+				8EFDDFAB1C8E7442000A9B07 /* RKObjectUtilities.m */,
+				8EFDDFAC1C8E7442000A9B07 /* RKPropertyInspector.h */,
+				8EFDDFAD1C8E7442000A9B07 /* RKPropertyInspector.m */,
+			);
+			path = RuntimeUtil;
 			sourceTree = "<group>";
 		};
 		AB5363867A755E411FEA0C17 /* Frameworks */ = {
@@ -387,9 +429,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				8E6D75E71C8DD3FB0012658D /* BSHTTPAPIManager.m in Sources */,
+				8EFDDFAF1C8E7442000A9B07 /* RKPropertyInspector.m in Sources */,
 				8E8196FF1C8D51C800B82F8E /* ViewController.m in Sources */,
 				8E8196FC1C8D51C800B82F8E /* AppDelegate.m in Sources */,
 				8E81972F1C8D5D3300B82F8E /* BSJSONWrapper.m in Sources */,
+				8EFDDFAE1C8E7442000A9B07 /* RKObjectUtilities.m in Sources */,
 				8E8196F91C8D51C800B82F8E /* main.m in Sources */,
 				8EFDDF9E1C8D6CC1000A9B07 /* BSAPIResult.m in Sources */,
 			);

@@ -39,6 +39,7 @@
     
     void (^successBlock)(NSURLSessionDataTask *, id) = ^(NSURLSessionDataTask *manager, id JSON) {
         //TODO
+        [self _parseResultWithDictionary:JSON manager:manager success:success failure:failure];
     };
     
     void (^failBlock)(NSURLSessionDataTask *, NSError *) = ^(NSURLSessionDataTask *manager, NSError *error) {
@@ -53,7 +54,26 @@
             [manager GET:path parameters:params progress:progressBlock success:successBlock failure:failBlock];
         }
             break;
-            
+        case POST:
+        {
+            [manager POST:path parameters:params progress:progressBlock success:successBlock failure:failBlock];
+        }
+            break;
+        case PUT:
+        {
+            [manager PUT:path parameters:params success:successBlock failure:failBlock];
+        }
+            break;
+        case DELETE:
+        {
+            [manager DELETE:path parameters:params success:successBlock failure:failBlock];
+        }
+            break;
+        case PATCH:
+        {
+            [manager PATCH:path parameters:params success:successBlock failure:failBlock];
+        }
+            break;
         default:
             break;
     }
@@ -61,6 +81,7 @@
     return manager;
 }
 
+// 处理接口返回的信息 封装为BSAPIResult类
 - (void)_parseResultWithDictionary:(NSDictionary *)dictionary
                            manager:(NSURLSessionDataTask *)manager
                            success:(BSHTTPSuccessBlock)success
@@ -68,6 +89,27 @@
 {
     BSAPIResult *result = [[BSAPIResult alloc] initWithDictionary:dictionary];
     
+    if (!result.error) {
+        success(result);
+        //TODO:输出返回信息
+    }else {
+        NSError *error = nil; //TODO
+        failure(error);
+        //TODO:输出错误信息
+    }
+}
+
+static BSHTTPAPIManager *sharedInstance = nil;
+
++ (BSHTTPAPIManager *)manager
+{
+    NSAssert(sharedInstance, @"Initialize manager using configureWithBasePath:apiVersion before any usage");
+    return sharedInstance;
+}
+
++ (void)configureWithBasePath:(NSString *)basePath apiVersion:(NSString *)versionStr {
+    sharedInstance = [[BSHTTPAPIManager alloc] initWithBaseURL:[NSURL URLWithString:basePath]];
+    sharedInstance.apiVersion = versionStr;
 }
 
 @end
