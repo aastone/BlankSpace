@@ -9,6 +9,14 @@
 #ifndef BSLib_h
 #define BSLib_h
 
+#import "NSString+Util.h"
+
+#import "UIImage+Utils.h"
+#import "UIColor+Tools.h"
+#import "TypeCheckMacros.h"
+#import "BSJSONWrapper.h"
+//#import "UIView+LayoutMethods.h"
+
 #define WeakSelf __weak typeof(self)
 #define WeakfySelf WeakSelf wself = self;
 #define StrongfySelf typeof(self) sself = wself;
