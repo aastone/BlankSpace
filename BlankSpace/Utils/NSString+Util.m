@@ -10,6 +10,9 @@
 
 @implementation NSString(Util)
 NSString *letters = @"abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
+
+NSString *numberSets = @"1234567890.+";
+
 + (NSString *) randomStringWithLength: (int) len {
 
     NSMutableString *randomString = [NSMutableString stringWithCapacity: len];
@@ -466,11 +469,18 @@ static NSString * SSPercentEscapedQueryStringValueFromStringWithEncoding(NSStrin
     return mattr;
 }
 
+- (NSAttributedString *)numberAttributedStringWithNumberColor:(UIColor *)numberColor numberFont:(CGFloat)numberFont
+{
+    NSMutableAttributedString *originalAttrStr = [[NSMutableAttributedString alloc] initWithString:self];
+//    return originalAttrStr;
+    return nil;
+}
+
 - (NSAttributedString *)numberAttributedStringWithNumberColor:(UIColor *)numberColor numberFont:(CGFloat)numberFont textColor:(UIColor *)textColor textFont:(CGFloat)textFont
 {
     // 数字显示统一样式，其他文字显示统一样式
     NSMutableAttributedString *originalAttrStr = [[NSMutableAttributedString alloc] initWithString:self attributes:@{NSFontAttributeName:[UIFont systemFontOfSize:textFont], NSForegroundColorAttributeName:textColor}];
-    NSCharacterSet *numberSet = [NSCharacterSet characterSetWithCharactersInString:@"1234567890.+"];//对数字和小数点都进行判断
+    NSCharacterSet *numberSet = [NSCharacterSet characterSetWithCharactersInString:numberSets];//对数字和小数点都进行判断
     
     NSScanner *scanner = [NSScanner scannerWithString:self];
     NSNumber *prevScanLocation;

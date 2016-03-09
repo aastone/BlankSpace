@@ -23,6 +23,10 @@
 - (BOOL)isValidPhone;
 + (BOOL)isNilOrEmpty:(NSString*)str;
 
+- (NSString *)toBase64String;
+
+- (NSString *)base64StringToOriginString;
+
 // If the string only contains white space or \r\\n, this function returns nil \n
 // else it returns a string trimed. \n
 // if the string is nil, call this function will also get nil, which is desirable \n
@@ -63,10 +67,12 @@
 /**
  *  查找字符串中的数字，自定义它们的颜色和字体
  **/
+NS_ASSUME_NONNULL_BEGIN
+
 - (NSAttributedString *)numberAttributedStringWithNumberColor:(UIColor *)numberColor numberFont:(CGFloat)numberFont textColor:(UIColor *)textColor textFont:(CGFloat)textFont;
 
-- (NSString *)toBase64String;
+- (NSAttributedString *)numberAttributedStringWithNumberColor:(nullable UIColor *)numberColor numberFont:(CGFloat)numberFont;
 
-- (NSString *)base64StringToOriginString;
+NS_ASSUME_NONNULL_END
 
 @end
