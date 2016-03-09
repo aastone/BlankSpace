@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5DD9F321BAEB6E71DAB2D2DE /* Pods_BlankSpace.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F9D59B2A373D087C1671A2D /* Pods_BlankSpace.framework */; };
 		8E6D75E71C8DD3FB0012658D /* BSHTTPAPIManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EFDDFA01C8D6E52000A9B07 /* BSHTTPAPIManager.m */; };
 		8E6D75ED1C8F18E40012658D /* BSModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E6D75EC1C8F18E40012658D /* BSModel.m */; };
 		8E6D75F11C8F1A920012658D /* NSString+Util.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E6D75F01C8F1A920012658D /* NSString+Util.m */; };
@@ -27,7 +28,6 @@
 		8EFDDFAE1C8E7442000A9B07 /* RKObjectUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EFDDFAB1C8E7442000A9B07 /* RKObjectUtilities.m */; };
 		8EFDDFAF1C8E7442000A9B07 /* RKPropertyInspector.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EFDDFAD1C8E7442000A9B07 /* RKPropertyInspector.m */; };
 		8EFDDFB21C8EAAC5000A9B07 /* BSAPIRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EFDDFB11C8EAAC5000A9B07 /* BSAPIRequest.m */; };
-		98C37C8E4B33C263C04D86ED /* libPods-BlankSpace.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CB87C482DAA229F5EFF3487 /* libPods-BlankSpace.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,7 +48,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1CB87C482DAA229F5EFF3487 /* libPods-BlankSpace.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BlankSpace.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6F9D59B2A373D087C1671A2D /* Pods_BlankSpace.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BlankSpace.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A309A61997B245BAF43727D /* Pods-BlankSpace.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlankSpace.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BlankSpace/Pods-BlankSpace.debug.xcconfig"; sourceTree = "<group>"; };
 		8E6D75E61C8DD3470012658D /* BSLib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BSLib.h; path = Utils/BSLib.h; sourceTree = "<group>"; };
 		8E6D75EB1C8F18E40012658D /* BSModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BSModel.h; path = Model/BSModel.h; sourceTree = "<group>"; };
@@ -100,7 +100,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				98C37C8E4B33C263C04D86ED /* libPods-BlankSpace.a in Frameworks */,
+				5DD9F321BAEB6E71DAB2D2DE /* Pods_BlankSpace.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,7 +270,7 @@
 		AB5363867A755E411FEA0C17 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				1CB87C482DAA229F5EFF3487 /* libPods-BlankSpace.a */,
+				6F9D59B2A373D087C1671A2D /* Pods_BlankSpace.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";

@@ -1,0 +1,6 @@
+framework module HandyAutoLayout {
+  umbrella header "HandyAutoLayout-umbrella.h"
+
+  export *
+  module * { export * }
+}

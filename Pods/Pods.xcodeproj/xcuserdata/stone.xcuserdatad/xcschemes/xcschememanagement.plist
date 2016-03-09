@@ -9,7 +9,27 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Aspects.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>HandyAutoLayout.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-BlankSpace.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>ReactiveCocoa.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Result.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -17,12 +37,32 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>928353533005A4198EBDA5B700D37B64</key>
+		<key>1C3436CEA5C3D39764C5F54374794ECB</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>F1CAA254BE751007712967280393BA20</key>
+		<key>2AAF5D58510E0FFE27CFE8A4AD27A999</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>494AC66E1F8AF93035FD9F7494CEC8F9</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>7608C3F0143EBF13198CD20DC08BB12C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A8FF241B074D8C230C354C1DA0353F41</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C766897D56D8A815526A1B61D99EA0CA</key>
 		<dict>
 			<key>primary</key>
 			<true/>
