@@ -64,15 +64,19 @@
 - (NSComparisonResult)contactCompare:(NSString *)anotherString;
 
 - (NSAttributedString *)rmbAttributedStringWithSmallFontSize:(CGFloat)smallFontSize bigFontSize:(CGFloat)bigFontSize;
-/**
- *  查找字符串中的数字，自定义它们的颜色和字体
- **/
-NS_ASSUME_NONNULL_BEGIN
 
+/**
+ *  查找字符串中的数字（可以自定义一个set集合），自定义它们的颜色和字体
+ *
+ *  @param numberColor 当值为nil时，取默认的color
+ *  @param numberFont  当值为0时，取默认的font
+ *  @param textColor   当值为nil时，取默认的color
+ *  @param textFont    当值为0时，取默认的font
+ *
+ *  @return 返回一个 NSAttributedString
+ */
 - (NSAttributedString *)numberAttributedStringWithNumberColor:(UIColor *)numberColor numberFont:(CGFloat)numberFont textColor:(UIColor *)textColor textFont:(CGFloat)textFont;
 
-- (NSAttributedString *)numberAttributedStringWithNumberColor:(nullable UIColor *)numberColor numberFont:(CGFloat)numberFont;
-
-NS_ASSUME_NONNULL_END
+- (NSAttributedString *)numberAttributedStringWithNumberColor:(UIColor *)numberColor numberFont:(CGFloat)numberFont;
 
 @end

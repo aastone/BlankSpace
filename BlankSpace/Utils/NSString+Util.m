@@ -471,15 +471,33 @@ static NSString * SSPercentEscapedQueryStringValueFromStringWithEncoding(NSStrin
 
 - (NSAttributedString *)numberAttributedStringWithNumberColor:(UIColor *)numberColor numberFont:(CGFloat)numberFont
 {
-    NSMutableAttributedString *originalAttrStr = [[NSMutableAttributedString alloc] initWithString:self];
-//    return originalAttrStr;
-    return nil;
+    return [self numberAttributedStringWithNumberColor:numberColor numberFont:numberFont textColor:nil textFont:0];
 }
 
 - (NSAttributedString *)numberAttributedStringWithNumberColor:(UIColor *)numberColor numberFont:(CGFloat)numberFont textColor:(UIColor *)textColor textFont:(CGFloat)textFont
 {
+    NSMutableAttributedString *originalAttrStr = [[NSMutableAttributedString alloc] initWithString:self];
+    NSRange range = NSMakeRange(0, self.length);
+    UIColor *defaultColor = [originalAttrStr attribute:NSForegroundColorAttributeName atIndex:0 effectiveRange:&range];
+    UIFont *defaultFont = [originalAttrStr attribute:NSFontAttributeName atIndex:0 effectiveRange:&range];
+    //传参可以为nil 或 0
+    if (!textColor) {
+        textColor = defaultColor;
+    }
+    
+    if (!textFont) {
+        textFont = defaultFont.pointSize;
+    }
+    
+    if (!numberColor) {
+        numberColor = defaultColor;
+    }
+    
+    if (!numberFont) {
+        numberFont = defaultFont.pointSize;
+    }
     // 数字显示统一样式，其他文字显示统一样式
-    NSMutableAttributedString *originalAttrStr = [[NSMutableAttributedString alloc] initWithString:self attributes:@{NSFontAttributeName:[UIFont systemFontOfSize:textFont], NSForegroundColorAttributeName:textColor}];
+    originalAttrStr = [[NSMutableAttributedString alloc] initWithString:self attributes:@{NSFontAttributeName:[UIFont systemFontOfSize:textFont], NSForegroundColorAttributeName:textColor}];
     NSCharacterSet *numberSet = [NSCharacterSet characterSetWithCharactersInString:numberSets];//对数字和小数点都进行判断
     
     NSScanner *scanner = [NSScanner scannerWithString:self];
