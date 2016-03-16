@@ -6,6 +6,7 @@ use_frameworks!
 target 'BlankSpace' do
     pod 'AFNetworking', '~> 3.0'
     pod 'HandyAutoLayout'
+    pod 'NSDate-Escort'
     pod 'ReactiveCocoa'
     pod 'Aspects'
 end

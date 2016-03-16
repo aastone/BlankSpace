@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '7850B2B0E30E3BF01FB78D02'
-               BlueprintName = 'Aspects'
+               BlueprintIdentifier = 'EA593B9E5AFFBED19940E674'
+               BlueprintName = 'NSDate-Escort'
                ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'Aspects.framework'>
+               BuildableName = 'NSDate_Escort.framework'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

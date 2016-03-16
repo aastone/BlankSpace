@@ -16,6 +16,7 @@ PODS:
     - AFNetworking/NSURLSession
   - Aspects (1.4.1)
   - HandyAutoLayout (1.0.0)
+  - NSDate-Escort (1.7.0)
   - ReactiveCocoa (4.0.1):
     - ReactiveCocoa/UI (= 4.0.1)
     - Result (~> 1.0.2)
@@ -33,12 +34,14 @@ DEPENDENCIES:
   - AFNetworking (~> 3.0)
   - Aspects
   - HandyAutoLayout
+  - NSDate-Escort
   - ReactiveCocoa
 
 SPEC CHECKSUMS:
   AFNetworking: a0075feb321559dc78d9d85b55d11caa19eabb93
   Aspects: 7595ba96a6727a58ebcbfc954497fc5d2fdde546
   HandyAutoLayout: f6ef3ab011318f8493fa868d93d9b03ceef4ef90
+  NSDate-Escort: 3469fefab423c094108c2e864416b61b6ac0edbc
   ReactiveCocoa: f7011630aee4deeb16352fcb1b50d6bde9db4f90
   Result: dd3dd71af3fa2e262f1a999e14fba2c25ec14f16
 

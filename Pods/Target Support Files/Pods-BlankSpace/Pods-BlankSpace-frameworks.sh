@@ -87,6 +87,7 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "Pods-BlankSpace/AFNetworking.framework"
   install_framework "Pods-BlankSpace/Aspects.framework"
   install_framework "Pods-BlankSpace/HandyAutoLayout.framework"
+  install_framework "Pods-BlankSpace/NSDate_Escort.framework"
   install_framework "Pods-BlankSpace/ReactiveCocoa.framework"
   install_framework "Pods-BlankSpace/Result.framework"
 fi
@@ -94,6 +95,7 @@ if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "Pods-BlankSpace/AFNetworking.framework"
   install_framework "Pods-BlankSpace/Aspects.framework"
   install_framework "Pods-BlankSpace/HandyAutoLayout.framework"
+  install_framework "Pods-BlankSpace/NSDate_Escort.framework"
   install_framework "Pods-BlankSpace/ReactiveCocoa.framework"
   install_framework "Pods-BlankSpace/Result.framework"
 fi
