@@ -90,6 +90,7 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "Pods-BlankSpace/NSDate_Escort.framework"
   install_framework "Pods-BlankSpace/ReactiveCocoa.framework"
   install_framework "Pods-BlankSpace/Result.framework"
+  install_framework "Pods-BlankSpace/UICKeyChainStore.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "Pods-BlankSpace/AFNetworking.framework"
@@ -98,4 +99,5 @@ if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "Pods-BlankSpace/NSDate_Escort.framework"
   install_framework "Pods-BlankSpace/ReactiveCocoa.framework"
   install_framework "Pods-BlankSpace/Result.framework"
+  install_framework "Pods-BlankSpace/UICKeyChainStore.framework"
 fi

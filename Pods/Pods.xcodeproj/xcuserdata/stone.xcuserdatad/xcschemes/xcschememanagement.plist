@@ -39,9 +39,19 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>UICKeyChainStore.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>01BB057A10506E5980B0517A9EFFB39D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>1C3436CEA5C3D39764C5F54374794ECB</key>
 		<dict>
 			<key>primary</key>
@@ -52,17 +62,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>45E019EE3615027A38A8627C3135B40F</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>6661F8342638C2180EF1C4D058877C12</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>751B1194C80EE90462BB99CB61FFF2B0</key>
+		<key>59CBD826FEB822208BAA78BAB3F13FF1</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -73,6 +73,16 @@
 			<true/>
 		</dict>
 		<key>E2E5E2F392237EA85202BF0F717C92B4</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E56696DF32EA1173F4B2283DB552AD99</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>FF03400CFD8BD251F820CC88FF8A4849</key>
 		<dict>
 			<key>primary</key>
 			<true/>

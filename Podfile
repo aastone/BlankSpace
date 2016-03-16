@@ -8,6 +8,7 @@ target 'BlankSpace' do
     pod 'HandyAutoLayout'
     pod 'NSDate-Escort'
     pod 'ReactiveCocoa'
+    pod 'UICKeyChainStore'
     pod 'Aspects'
 end
 
