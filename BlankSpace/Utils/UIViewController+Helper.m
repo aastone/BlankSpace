@@ -1,36 +1,36 @@
-////
-////  UIViewController+Helper.h
-////  BlankSpace
-////
-////  Created by stone on 16/3/7.
-////  Copyright © 2016年 stone. All rights reserved.
-////
-//#import <objc/runtime.h>
-//#import "UIViewController+Helper.h"
-//#import "UIImage+Utils.h"
-//#import "UIView+Helper.h"
+//
+//  UIViewController+Helper.h
+//  BlankSpace
+//
+//  Created by stone on 16/3/7.
+//  Copyright © 2016年 stone. All rights reserved.
+//
+#import <objc/runtime.h>
+#import "UIViewController+Helper.h"
+#import "UIImage+Utils.h"
+#import "UIView+Helper.h"
 //#import "UIView+LayoutMethods.h"
-//#import "UINavigationItem+Helper.h"
-//
-//@interface UIViewController()
-//@property(nonatomic, strong) UIScrollView *respondingScrollView;
-//@end
-//@implementation UIViewController (Helper)
-//
-//static char respondingScrollViewKey;
-//
+#import "UINavigationItem+Helper.h"
+
+@interface UIViewController()
+@property(nonatomic, strong) UIScrollView *respondingScrollView;
+@end
+@implementation UIViewController (Helper)
+
+static char respondingScrollViewKey;
+
 //static char overDismissBlockKey;
-//
-//- (void)setRespondingScrollView:(UIScrollView *)respondingScrollView {
-//    objc_setAssociatedObject(self, &respondingScrollViewKey,
-//            respondingScrollView,
-//            OBJC_ASSOCIATION_RETAIN_NONATOMIC);
-//}
-//
-//- (UIScrollView *)respondingScrollView {
-//    return objc_getAssociatedObject(self, &respondingScrollViewKey);
-//}
-//
+
+- (void)setRespondingScrollView:(UIScrollView *)respondingScrollView {
+    objc_setAssociatedObject(self, &respondingScrollViewKey,
+            respondingScrollView,
+            OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+}
+
+- (UIScrollView *)respondingScrollView {
+    return objc_getAssociatedObject(self, &respondingScrollViewKey);
+}
+
 //- (void)setOverlayDismissBlock:(OverlayDismissBlock)overlayDismissBlock {
 //    objc_setAssociatedObject(self, &overDismissBlockKey,
 //            overlayDismissBlock,
@@ -40,29 +40,29 @@
 //- (OverlayDismissBlock)overlayDismissBlock {
 //    return objc_getAssociatedObject(self, &overDismissBlockKey);
 //}
-//
-//- (void)presentViewControllerInNavigationController:(UIViewController *)viewController {
-//    [self presentViewControllerInNavigationController:viewController animated:YES completion:nil];
-//}
-//
-//- (void)presentViewControllerInNavigationController:(UIViewController *)viewController animated:(BOOL)animated completion:(void (^)(void))completion {
-//    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:viewController];
-//    [self presentViewController:nav animated:animated completion:completion];
-//}
-//
-//- (void)pushViewControllerHidesBottomBar:(UIViewController *)viewController {
-//    viewController.hidesBottomBarWhenPushed = YES;
-//    [self.navigationController pushViewController:viewController animated:YES];
-//}
-//
-//- (UIViewController *)mostParentViewController {
-//    UIViewController *vc = self;
-//    while (vc.parentViewController) {
-//        vc = vc.parentViewController;
-//    }
-//    return vc;
-//}
-//
+
+- (void)presentViewControllerInNavigationController:(UIViewController *)viewController {
+    [self presentViewControllerInNavigationController:viewController animated:YES completion:nil];
+}
+
+- (void)presentViewControllerInNavigationController:(UIViewController *)viewController animated:(BOOL)animated completion:(void (^)(void))completion {
+    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:viewController];
+    [self presentViewController:nav animated:animated completion:completion];
+}
+
+- (void)pushViewControllerHidesBottomBar:(UIViewController *)viewController {
+    viewController.hidesBottomBarWhenPushed = YES;
+    [self.navigationController pushViewController:viewController animated:YES];
+}
+
+- (UIViewController *)mostParentViewController {
+    UIViewController *vc = self;
+    while (vc.parentViewController) {
+        vc = vc.parentViewController;
+    }
+    return vc;
+}
+
 //- (void)presentViewControllerInOverlay:(UIViewController *)viewController {
 //    UIView *view = viewController.view;
 //  
@@ -82,6 +82,7 @@
 //    [viewController viewDidAppear:YES];
 //    [topViewController viewDidDisappear:YES]; // 这个可以放到动画之后
 //    
+//    //TODO
 //    view.center = CGPointMake(topView.width / 2, topView.height / 2);
 //    
 //    CGFloat y = view.center.y;
@@ -103,7 +104,7 @@
 //    dimView.userInteractionEnabled = YES;
 //    [dimView addGestureRecognizer:recognizer];
 //}
-//
+
 //- (void)lg_overlayDimTapped:(UITapGestureRecognizer *)g {
 //    if (g.state == UIGestureRecognizerStateEnded) {
 //        CGPoint point = [g locationOfTouch:0 inView:self.view];
@@ -135,18 +136,18 @@
 //                         [parent viewDidAppear:YES];
 //                     }];
 //}
-//
-//- (void)addRightCompletionDismissItem {
-//    self.navigationItem.rightBarButtonItem = [UINavigationItem itemWithTitle:@"完成" selector:@selector(wp_DismissViewController:) target:self];
-//}
-//
-//- (void)wp_DismissViewController:(id)sender {
-//    [self dismissViewControllerAnimated:YES
-//                             completion:nil];
-//}
-//
-//
-//
+
+- (void)addRightCompletionDismissItem {
+    self.navigationItem.rightBarButtonItem = [UINavigationItem itemWithTitle:@"完成" selector:@selector(wp_DismissViewController:) target:self];
+}
+
+- (void)wp_DismissViewController:(id)sender {
+    [self dismissViewControllerAnimated:YES
+                             completion:nil];
+}
+
+
+
 //- (void)wp_keyboardWillShow:(NSNotification *)note {
 //    CGRect keyboardFrame = [note.userInfo[UIKeyboardFrameEndUserInfoKey] CGRectValue];
 //    UIView *lastView = [self getLastView];
@@ -170,15 +171,15 @@
 //        scrollView.contentOffset = CGPointMake(0, self.respondingScrollView.contentSize.height - scrollView.height + scrollView.contentInset.bottom);
 //    }
 //}
-//
-//
-//- (UIView *)getLastView {
-//    if ([self.respondingScrollView isKindOfClass:[UITableView class]]) {
-//        return nil;
-//    }
-//    UIView *lastView = self.respondingScrollView.subviews[self.respondingScrollView.subviews.count - 3];
-//    return lastView;
-//}
+
+
+- (UIView *)getLastView {
+    if ([self.respondingScrollView isKindOfClass:[UITableView class]]) {
+        return nil;
+    }
+    UIView *lastView = self.respondingScrollView.subviews[self.respondingScrollView.subviews.count - 3];
+    return lastView;
+}
 //- (void)wp_keyboardWillHide:(NSNotification *)note {
 //    UIView *lastView = [self getLastView];
 //    UIScrollView *scrollView = self.respondingScrollView;
@@ -194,7 +195,7 @@
 //    scrollInset.bottom = 0;
 //    scrollView.scrollIndicatorInsets = scrollInset;
 //}
-//
+
 //- (void)setScrollViewNeedsRespondingToKeyboard:(UIScrollView *)scrollView {
 //    if (scrollView != self.respondingScrollView) {
 //        self.respondingScrollView = scrollView;
@@ -207,5 +208,5 @@
 //        }
 //    }
 //}
-//
-//@end
+
+@end
