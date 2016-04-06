@@ -19,6 +19,10 @@
 		8E8197121C8D51C800B82F8E /* BlankSpaceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E8197111C8D51C800B82F8E /* BlankSpaceTests.m */; };
 		8E81971D1C8D51C800B82F8E /* BlankSpaceUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E81971C1C8D51C800B82F8E /* BlankSpaceUITests.m */; };
 		8E81972F1C8D5D3300B82F8E /* BSJSONWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E81972E1C8D5D3300B82F8E /* BSJSONWrapper.m */; };
+		8E8D87E91CB4D7DD0010A2A6 /* BSViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E8D87E81CB4D7DD0010A2A6 /* BSViewModel.m */; };
+		8E8D87EC1CB4D8360010A2A6 /* BSBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E8D87EB1CB4D8360010A2A6 /* BSBaseViewController.m */; };
+		8E8D87EF1CB4D8D70010A2A6 /* LogUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E8D87EE1CB4D8D70010A2A6 /* LogUtils.m */; };
+		8E8D87F31CB4D9430010A2A6 /* BSLoadStatusView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E8D87F21CB4D9430010A2A6 /* BSLoadStatusView.m */; };
 		8EFDDF9E1C8D6CC1000A9B07 /* BSAPIResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EFDDF9D1C8D6CC1000A9B07 /* BSAPIResult.m */; };
 		8EFDDFAE1C8E7442000A9B07 /* RKObjectUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EFDDFAB1C8E7442000A9B07 /* RKObjectUtilities.m */; };
 		8EFDDFAF1C8E7442000A9B07 /* RKPropertyInspector.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EFDDFAD1C8E7442000A9B07 /* RKPropertyInspector.m */; };
@@ -82,6 +86,14 @@
 		8E81971E1C8D51C800B82F8E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8E81972D1C8D5D3300B82F8E /* BSJSONWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BSJSONWrapper.h; path = Utils/BSJSONWrapper.h; sourceTree = "<group>"; };
 		8E81972E1C8D5D3300B82F8E /* BSJSONWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BSJSONWrapper.m; path = Utils/BSJSONWrapper.m; sourceTree = "<group>"; };
+		8E8D87E71CB4D7DD0010A2A6 /* BSViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BSViewModel.h; path = Base/BSViewModel.h; sourceTree = "<group>"; };
+		8E8D87E81CB4D7DD0010A2A6 /* BSViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BSViewModel.m; path = Base/BSViewModel.m; sourceTree = "<group>"; };
+		8E8D87EA1CB4D8360010A2A6 /* BSBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BSBaseViewController.h; path = Base/BSBaseViewController.h; sourceTree = "<group>"; };
+		8E8D87EB1CB4D8360010A2A6 /* BSBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BSBaseViewController.m; path = Base/BSBaseViewController.m; sourceTree = "<group>"; };
+		8E8D87ED1CB4D8D70010A2A6 /* LogUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LogUtils.h; path = Utils/LogUtils.h; sourceTree = "<group>"; };
+		8E8D87EE1CB4D8D70010A2A6 /* LogUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LogUtils.m; path = Utils/LogUtils.m; sourceTree = "<group>"; };
+		8E8D87F11CB4D9430010A2A6 /* BSLoadStatusView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BSLoadStatusView.h; path = View/BSLoadStatusView.h; sourceTree = "<group>"; };
+		8E8D87F21CB4D9430010A2A6 /* BSLoadStatusView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BSLoadStatusView.m; path = View/BSLoadStatusView.m; sourceTree = "<group>"; };
 		8EFDDF9C1C8D6CC1000A9B07 /* BSAPIResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BSAPIResult.h; path = Network/BSAPIResult.h; sourceTree = "<group>"; };
 		8EFDDF9D1C8D6CC1000A9B07 /* BSAPIResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BSAPIResult.m; path = Network/BSAPIResult.m; sourceTree = "<group>"; };
 		8EFDDF9F1C8D6E52000A9B07 /* BSHTTPAPIManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BSHTTPAPIManager.h; path = Network/BSHTTPAPIManager.h; sourceTree = "<group>"; };
@@ -179,6 +191,7 @@
 		8E8196F61C8D51C800B82F8E /* BlankSpace */ = {
 			isa = PBXGroup;
 			children = (
+				8E8D87F01CB4D90E0010A2A6 /* View */,
 				8EFDDFA61C8E6FF4000A9B07 /* Model */,
 				8E81972C1C8D5C8A00B82F8E /* Utils */,
 				8E81972B1C8D545600B82F8E /* Network */,
@@ -225,6 +238,10 @@
 		8E81972A1C8D543000B82F8E /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				8E8D87E71CB4D7DD0010A2A6 /* BSViewModel.h */,
+				8E8D87E81CB4D7DD0010A2A6 /* BSViewModel.m */,
+				8E8D87EA1CB4D8360010A2A6 /* BSBaseViewController.h */,
+				8E8D87EB1CB4D8360010A2A6 /* BSBaseViewController.m */,
 			);
 			name = Base;
 			sourceTree = "<group>";
@@ -250,6 +267,15 @@
 				8EFDDFA71C8E73F9000A9B07 /* Categories */,
 			);
 			name = Utils;
+			sourceTree = "<group>";
+		};
+		8E8D87F01CB4D90E0010A2A6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8E8D87F11CB4D9430010A2A6 /* BSLoadStatusView.h */,
+				8E8D87F21CB4D9430010A2A6 /* BSLoadStatusView.m */,
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 		8EFDDFA61C8E6FF4000A9B07 /* Model */ = {
@@ -307,6 +333,8 @@
 			children = (
 				8EFDDFB31C8FCF0B000A9B07 /* TypeCheckMacros.h */,
 				8E6D75E61C8DD3470012658D /* BSLib.h */,
+				8E8D87ED1CB4D8D70010A2A6 /* LogUtils.h */,
+				8E8D87EE1CB4D8D70010A2A6 /* LogUtils.m */,
 			);
 			name = Lib;
 			sourceTree = "<group>";
@@ -527,6 +555,8 @@
 				8E6D75E71C8DD3FB0012658D /* BSHTTPAPIManager.m in Sources */,
 				8EFDDFBF1C8FCF21000A9B07 /* UIColor+Tools.m in Sources */,
 				8E6D75ED1C8F18E40012658D /* BSModel.m in Sources */,
+				8E8D87E91CB4D7DD0010A2A6 /* BSViewModel.m in Sources */,
+				8E8D87EC1CB4D8360010A2A6 /* BSBaseViewController.m in Sources */,
 				8EFDE02C1C91C944000A9B07 /* UINavigationBar+BackgroundColor.m in Sources */,
 				8EFDE02F1C91C944000A9B07 /* UITableView+Reorder.m in Sources */,
 				8EFDE0271C91C944000A9B07 /* NSDate+TimeUtil.m in Sources */,
@@ -539,9 +569,11 @@
 				8EFDDFBE1C8FCF21000A9B07 /* NSString+Util.m in Sources */,
 				8EFDDFAE1C8E7442000A9B07 /* RKObjectUtilities.m in Sources */,
 				8EFDE02B1C91C944000A9B07 /* UIButton+Extension.m in Sources */,
+				8E8D87F31CB4D9430010A2A6 /* BSLoadStatusView.m in Sources */,
 				8E8196F91C8D51C800B82F8E /* main.m in Sources */,
 				8EFDE02E1C91C944000A9B07 /* UITableView+Helper.m in Sources */,
 				8EFDE02A1C91C944000A9B07 /* UIApplication+Extra.m in Sources */,
+				8E8D87EF1CB4D8D70010A2A6 /* LogUtils.m in Sources */,
 				8EFDE02D1C91C944000A9B07 /* UINavigationItem+Helper.m in Sources */,
 				8EFDDFC01C8FCF21000A9B07 /* UIImage+Utils.m in Sources */,
 				8EFDE0301C91C944000A9B07 /* UIViewController+Helper.m in Sources */,

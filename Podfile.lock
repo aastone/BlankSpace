@@ -29,6 +29,8 @@ PODS:
     - ReactiveCocoa/Core
     - Result (~> 1.0.2)
   - Result (1.0.2)
+  - SVProgressHUD (2.0.2)
+  - SVPullToRefresh (0.4.1)
   - UICKeyChainStore (2.1.0)
 
 DEPENDENCIES:
@@ -37,6 +39,8 @@ DEPENDENCIES:
   - HandyAutoLayout
   - NSDate-Escort
   - ReactiveCocoa
+  - SVProgressHUD
+  - SVPullToRefresh
   - UICKeyChainStore
 
 SPEC CHECKSUMS:
@@ -46,6 +50,8 @@ SPEC CHECKSUMS:
   NSDate-Escort: 3469fefab423c094108c2e864416b61b6ac0edbc
   ReactiveCocoa: f7011630aee4deeb16352fcb1b50d6bde9db4f90
   Result: dd3dd71af3fa2e262f1a999e14fba2c25ec14f16
+  SVProgressHUD: e4020e23badbd7cc61bc4a80d3c1da57f166a978
+  SVPullToRefresh: ba2e718695a43253d8bea6852d2960097dc15d8c
   UICKeyChainStore: f1cbd42216a113f0165de1e733e62905b8823432
 
 COCOAPODS: 0.39.0

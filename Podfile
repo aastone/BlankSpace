@@ -10,6 +10,8 @@ target 'BlankSpace' do
     pod 'ReactiveCocoa'
     pod 'UICKeyChainStore'
     pod 'Aspects'
+    pod 'SVProgressHUD'
+    pod 'SVPullToRefresh'
 end
 
 target 'BlankSpaceTests' do

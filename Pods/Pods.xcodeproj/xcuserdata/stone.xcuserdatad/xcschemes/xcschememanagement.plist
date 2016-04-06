@@ -39,6 +39,16 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>SVProgressHUD.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>SVPullToRefresh.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>UICKeyChainStore.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -47,11 +57,6 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>01BB057A10506E5980B0517A9EFFB39D</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
 		<key>1C3436CEA5C3D39764C5F54374794ECB</key>
 		<dict>
 			<key>primary</key>
@@ -62,7 +67,32 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>59CBD826FEB822208BAA78BAB3F13FF1</key>
+		<key>345F7EEE19848EEE27E8B99EEB25C4D3</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>3AE2BF270FFADC4FFF32A7A3F7311B78</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>4DB609BD5A8691C4D00146120BBADF6E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A513D9387B4B594CAB68546B78306C19</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>B506F43AE181AABC473C94EBDDCA22AD</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>BCE341A784841F218768B7338239E3BF</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -73,16 +103,6 @@
 			<true/>
 		</dict>
 		<key>E2E5E2F392237EA85202BF0F717C92B4</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>E56696DF32EA1173F4B2283DB552AD99</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>FF03400CFD8BD251F820CC88FF8A4849</key>
 		<dict>
 			<key>primary</key>
 			<true/>
