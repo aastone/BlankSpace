@@ -15,4 +15,35 @@
 }
 
 
++ (void)setSingleButtonSelected:(UIButton *)clickedButton withButtons:(NSArray *)buttons
+{
+    if (clickedButton.selected) {
+        return;
+    }
+    for (id btn in buttons) {
+        if ([btn isKindOfClass:[UIButton class]]) {
+            UIButton *button = btn;
+            button.selected = NO;
+        }else {
+            NSLog(@"Wrong type of buttons");
+        }
+    }
+    
+    clickedButton.selected = YES;
+}
+
++ (void)setAllButtonSelectedOrUnselected:(UIButton *)clickedButton withButtons:(NSArray *)buttons
+{
+    for (id btn in buttons) {
+        if ([btn isKindOfClass:[UIButton class]]) {
+            UIButton *button = btn;
+            button.selected = !clickedButton.isSelected;
+        }else {
+            NSLog(@"Wrong type of buttons");
+        }
+    }
+    
+    clickedButton.selected = !clickedButton.isSelected;
+}
+
 @end

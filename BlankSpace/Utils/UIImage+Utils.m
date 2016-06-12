@@ -161,4 +161,32 @@
     return theImage;
 }
 
++ (UIImage *)QRCodeImageWithString:(NSString *)str
+{
+    if (str.length == 0) {
+        return  nil;
+    }
+    NSData *stringData = [str dataUsingEncoding:NSISOLatin1StringEncoding];
+    
+    CIFilter *qrFilter = [CIFilter filterWithName:@"CIQRCodeGenerator"];
+    [qrFilter setValue:stringData forKey:@"inputMessage"];
+    
+    // 处理二维码放大时模糊的情况
+    CGAffineTransform transform = CGAffineTransformMakeScale(5.0f, 5.0f); // Scale by 5 times along both dimensions
+    CIImage *outputImage = [qrFilter.outputImage imageByApplyingTransform:transform];
+    return [UIImage imageWithCIImage:outputImage];
+}
+
++ (UIImage *)imageWithUIView:(UIView *)view
+{
+    UIGraphicsBeginImageContextWithOptions(view.bounds.size, NO, [UIScreen mainScreen].scale);//对模糊情况作了处理
+    CGContextRef currentContext = UIGraphicsGetCurrentContext();
+    [view.layer renderInContext:currentContext];
+    
+    UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    return image;
+}
+
+
 @end

@@ -29,4 +29,13 @@
 - (NSNumber *)unixTimestampInMilliSeconds;
 - (NSNumber *)unixTimestampInSeconds;
 
+/**
+ *  得到输入日期所在的星期
+ *
+ *  @param inputDate 为nil时代表当前日期
+ *
+ *  @return 返回数字1~7，分别代表周一到周日
+ */
++ (NSNumber *)currentDayInWeek:(NSDate *)inputDate;
+
 @end

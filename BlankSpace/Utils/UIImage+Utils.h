@@ -26,4 +26,22 @@ targetSize 单位为Pixel
 //根据颜色生成图片
 + (UIImage*)imageWithColor:(UIColor*)color size:(CGSize)size;
 
+/**
+ *  根据URL生成二维码
+ *
+ *  @param str URL地址
+ *
+ *  @return 二维码图片
+ */
++ (UIImage *)QRCodeImageWithString:(NSString *)str;
+
+/**
+ *  根据view来生成image
+ *
+ *  @param view <#view description#>
+ *
+ *  @return <#return value description#>
+ */
++ (UIImage *)imageWithUIView:(UIView *)view;
+
 @end

@@ -8,8 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		5DD9F321BAEB6E71DAB2D2DE /* Pods_BlankSpace.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F9D59B2A373D087C1671A2D /* Pods_BlankSpace.framework */; };
+		8E4D6E7C1CD8891A004D96D9 /* BSLoginViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E4D6E7B1CD8891A004D96D9 /* BSLoginViewModel.m */; };
+		8E4D6E7F1CD889AC004D96D9 /* BSZeroViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E4D6E7E1CD889AC004D96D9 /* BSZeroViewController.m */; };
 		8E6D75E71C8DD3FB0012658D /* BSHTTPAPIManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EFDDFA01C8D6E52000A9B07 /* BSHTTPAPIManager.m */; };
 		8E6D75ED1C8F18E40012658D /* BSModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E6D75EC1C8F18E40012658D /* BSModel.m */; };
+		8E6E1E961CB63A4D0087CAE6 /* FCHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E6E1E951CB63A4D0087CAE6 /* FCHomeViewController.m */; };
+		8E6E1E9A1CB653750087CAE6 /* FCHomeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E6E1E981CB653750087CAE6 /* FCHomeTableViewCell.m */; };
+		8E6E1E9B1CB653750087CAE6 /* FCHomeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8E6E1E991CB653750087CAE6 /* FCHomeTableViewCell.xib */; };
 		8E8196F91C8D51C800B82F8E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E8196F81C8D51C800B82F8E /* main.m */; };
 		8E8196FC1C8D51C800B82F8E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E8196FB1C8D51C800B82F8E /* AppDelegate.m */; };
 		8E8196FF1C8D51C800B82F8E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E8196FE1C8D51C800B82F8E /* ViewController.m */; };
@@ -65,9 +70,18 @@
 /* Begin PBXFileReference section */
 		6F9D59B2A373D087C1671A2D /* Pods_BlankSpace.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BlankSpace.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A309A61997B245BAF43727D /* Pods-BlankSpace.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlankSpace.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BlankSpace/Pods-BlankSpace.debug.xcconfig"; sourceTree = "<group>"; };
+		8E4D6E7A1CD8891A004D96D9 /* BSLoginViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BSLoginViewModel.h; path = ../../FlashCard/Module/BSLoginViewModel.h; sourceTree = "<group>"; };
+		8E4D6E7B1CD8891A004D96D9 /* BSLoginViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BSLoginViewModel.m; path = ../../FlashCard/Module/BSLoginViewModel.m; sourceTree = "<group>"; };
+		8E4D6E7D1CD889AC004D96D9 /* BSZeroViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BSZeroViewController.h; path = ../../FlashCard/Module/BSZeroViewController.h; sourceTree = "<group>"; };
+		8E4D6E7E1CD889AC004D96D9 /* BSZeroViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BSZeroViewController.m; path = ../../FlashCard/Module/BSZeroViewController.m; sourceTree = "<group>"; };
 		8E6D75E61C8DD3470012658D /* BSLib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BSLib.h; path = Utils/BSLib.h; sourceTree = "<group>"; };
 		8E6D75EB1C8F18E40012658D /* BSModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BSModel.h; path = Model/BSModel.h; sourceTree = "<group>"; };
 		8E6D75EC1C8F18E40012658D /* BSModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BSModel.m; path = Model/BSModel.m; sourceTree = "<group>"; };
+		8E6E1E941CB63A4D0087CAE6 /* FCHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FCHomeViewController.h; path = ../../FlashCard/Module/Home/FCHomeViewController.h; sourceTree = "<group>"; };
+		8E6E1E951CB63A4D0087CAE6 /* FCHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FCHomeViewController.m; path = ../../FlashCard/Module/Home/FCHomeViewController.m; sourceTree = "<group>"; };
+		8E6E1E971CB653750087CAE6 /* FCHomeTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FCHomeTableViewCell.h; path = ../../FlashCard/Module/Home/FCHomeTableViewCell.h; sourceTree = "<group>"; };
+		8E6E1E981CB653750087CAE6 /* FCHomeTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FCHomeTableViewCell.m; path = ../../FlashCard/Module/Home/FCHomeTableViewCell.m; sourceTree = "<group>"; };
+		8E6E1E991CB653750087CAE6 /* FCHomeTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = FCHomeTableViewCell.xib; path = ../../FlashCard/Module/Home/FCHomeTableViewCell.xib; sourceTree = "<group>"; };
 		8E8196F41C8D51C800B82F8E /* BlankSpace.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlankSpace.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E8196F81C8D51C800B82F8E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		8E8196FA1C8D51C800B82F8E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -166,6 +180,50 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8E4D6E791CD888E7004D96D9 /* ZeroVC */ = {
+			isa = PBXGroup;
+			children = (
+				8E4D6E7A1CD8891A004D96D9 /* BSLoginViewModel.h */,
+				8E4D6E7B1CD8891A004D96D9 /* BSLoginViewModel.m */,
+				8E4D6E7D1CD889AC004D96D9 /* BSZeroViewController.h */,
+				8E4D6E7E1CD889AC004D96D9 /* BSZeroViewController.m */,
+			);
+			name = ZeroVC;
+			sourceTree = "<group>";
+		};
+		8E6E1E911CB631400087CAE6 /* Commom */ = {
+			isa = PBXGroup;
+			children = (
+				8E81972A1C8D543000B82F8E /* Base */,
+				8E8D87F01CB4D90E0010A2A6 /* View */,
+				8EFDDFA61C8E6FF4000A9B07 /* Model */,
+				8E81972C1C8D5C8A00B82F8E /* Utils */,
+				8E81972B1C8D545600B82F8E /* Network */,
+			);
+			name = Commom;
+			sourceTree = "<group>";
+		};
+		8E6E1E921CB6394A0087CAE6 /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				8E4D6E791CD888E7004D96D9 /* ZeroVC */,
+				8E6E1E931CB639A70087CAE6 /* Home */,
+			);
+			name = Module;
+			sourceTree = "<group>";
+		};
+		8E6E1E931CB639A70087CAE6 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				8E6E1E941CB63A4D0087CAE6 /* FCHomeViewController.h */,
+				8E6E1E951CB63A4D0087CAE6 /* FCHomeViewController.m */,
+				8E6E1E971CB653750087CAE6 /* FCHomeTableViewCell.h */,
+				8E6E1E981CB653750087CAE6 /* FCHomeTableViewCell.m */,
+				8E6E1E991CB653750087CAE6 /* FCHomeTableViewCell.xib */,
+			);
+			name = Home;
+			sourceTree = "<group>";
+		};
 		8E8196EB1C8D51C800B82F8E = {
 			isa = PBXGroup;
 			children = (
@@ -191,15 +249,12 @@
 		8E8196F61C8D51C800B82F8E /* BlankSpace */ = {
 			isa = PBXGroup;
 			children = (
-				8E8D87F01CB4D90E0010A2A6 /* View */,
-				8EFDDFA61C8E6FF4000A9B07 /* Model */,
-				8E81972C1C8D5C8A00B82F8E /* Utils */,
-				8E81972B1C8D545600B82F8E /* Network */,
-				8E81972A1C8D543000B82F8E /* Base */,
+				8E6E1E911CB631400087CAE6 /* Commom */,
 				8E8196FA1C8D51C800B82F8E /* AppDelegate.h */,
 				8E8196FB1C8D51C800B82F8E /* AppDelegate.m */,
 				8E8196FD1C8D51C800B82F8E /* ViewController.h */,
 				8E8196FE1C8D51C800B82F8E /* ViewController.m */,
+				8E6E1E921CB6394A0087CAE6 /* Module */,
 				8E8197001C8D51C800B82F8E /* Main.storyboard */,
 				8E8197031C8D51C800B82F8E /* Assets.xcassets */,
 				8E8197051C8D51C800B82F8E /* LaunchScreen.storyboard */,
@@ -474,6 +529,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8E8197071C8D51C800B82F8E /* LaunchScreen.storyboard in Resources */,
+				8E6E1E9B1CB653750087CAE6 /* FCHomeTableViewCell.xib in Resources */,
 				8E8197041C8D51C800B82F8E /* Assets.xcassets in Resources */,
 				8E8197021C8D51C800B82F8E /* Main.storyboard in Resources */,
 			);
@@ -553,14 +609,18 @@
 				8EFDE0261C91C944000A9B07 /* NSArray+Util.m in Sources */,
 				8EFDDFB21C8EAAC5000A9B07 /* BSAPIRequest.m in Sources */,
 				8E6D75E71C8DD3FB0012658D /* BSHTTPAPIManager.m in Sources */,
+				8E6E1E9A1CB653750087CAE6 /* FCHomeTableViewCell.m in Sources */,
 				8EFDDFBF1C8FCF21000A9B07 /* UIColor+Tools.m in Sources */,
 				8E6D75ED1C8F18E40012658D /* BSModel.m in Sources */,
 				8E8D87E91CB4D7DD0010A2A6 /* BSViewModel.m in Sources */,
+				8E4D6E7F1CD889AC004D96D9 /* BSZeroViewController.m in Sources */,
 				8E8D87EC1CB4D8360010A2A6 /* BSBaseViewController.m in Sources */,
 				8EFDE02C1C91C944000A9B07 /* UINavigationBar+BackgroundColor.m in Sources */,
 				8EFDE02F1C91C944000A9B07 /* UITableView+Reorder.m in Sources */,
 				8EFDE0271C91C944000A9B07 /* NSDate+TimeUtil.m in Sources */,
 				8EFDE0291C91C944000A9B07 /* NSNumber+Util.m in Sources */,
+				8E4D6E7C1CD8891A004D96D9 /* BSLoginViewModel.m in Sources */,
+				8E6E1E961CB63A4D0087CAE6 /* FCHomeViewController.m in Sources */,
 				8EFDDFAF1C8E7442000A9B07 /* RKPropertyInspector.m in Sources */,
 				8EFDE0281C91C944000A9B07 /* NSNull+Util.m in Sources */,
 				8E8196FF1C8D51C800B82F8E /* ViewController.m in Sources */,
@@ -724,6 +784,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "BlankSpace/BlankSpace-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -738,6 +799,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.me.stone.BlankSpace;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "BlankSpace/BlankSpace-Bridging-Header.h";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};

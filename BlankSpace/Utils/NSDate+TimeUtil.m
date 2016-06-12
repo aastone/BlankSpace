@@ -304,4 +304,18 @@
     return [self repeatTimerForInterval:seconds action:action startImmdiately:YES];
 }
 
++ (NSNumber *)currentDayInWeek:(NSDate *)inputDate
+{
+    NSArray *weekdays = [NSArray arrayWithObjects:[NSNull null],@7, @1, @2, @3, @4, @5, @6, nil];
+    NSCalendar *calendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSCalendarIdentifierGregorian];
+    NSTimeZone *timeZone = [[NSTimeZone alloc] initWithName:@"Asia/Shanghai"];
+    [calendar setTimeZone:timeZone];
+    NSCalendarUnit calendarUnit = NSCalendarUnitWeekday;
+    if (!inputDate) {
+        inputDate = [NSDate new];
+    }
+    NSDateComponents *theComponents = [calendar components:calendarUnit fromDate:inputDate];
+    return [weekdays objectAtIndex:theComponents.weekday];
+}
+
 @end

@@ -13,6 +13,7 @@
 #import "SVProgressHUD.h"
 #import "UIScrollView+SVPullToRefresh.h"
 #import "UIColor+Tools.h"
+#import <AFNetworking/AFNetworking.h>
 
 @interface BSBaseViewController ()
 
@@ -41,7 +42,7 @@
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
-    self.navigationController.navigationBar.barTintColor = [UIColor colorWithHexString:@"0Xffffff"];
+    self.navigationController.navigationBar.barTintColor = [UIColor colorWithHexString:@"0x95E5E5"];
     [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleDefault];
     self.navigationController.navigationBar.titleTextAttributes = @{NSForegroundColorAttributeName: [UIColor blackColor]};
     
