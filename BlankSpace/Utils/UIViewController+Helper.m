@@ -21,6 +21,11 @@ static char respondingScrollViewKey;
 
 //static char overDismissBlockKey;
 
++ (void)load
+{
+    NSLog(@"Helper.h [load] function");
+}
+
 - (void)setRespondingScrollView:(UIScrollView *)respondingScrollView {
     objc_setAssociatedObject(self, &respondingScrollViewKey,
             respondingScrollView,
